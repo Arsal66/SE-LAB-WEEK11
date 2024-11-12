@@ -10,7 +10,7 @@ router.post('/addproduct', async (req, res) => {
     res.status(201).json(newProduct);
    });
 
-   
+
 // Get all the Products
 router.get('/getall', async (req, res) => {
     const products = await Product.find();
